@@ -1,0 +1,21 @@
+Package: aisdk.skills
+Title: Skill Authoring, Store, and Bundled Skill Pack for 'aisdk'
+Version: 0.1.0
+Authors@R: person("Yonghe", "Xia", , "xiayh17@gmail.com", role = c("aut", "cre"))
+Description: Skill-ecosystem tooling and content for the 'aisdk' toolkit:
+    scaffolding helpers for authoring new skills, a global skill store for
+    sharing and installing skills, skill-forge authoring tools, and a bundled
+    pack of ready-to-use skills. On load it registers its bundled skill
+    directory with the core 'aisdk' skill registry, so the core skill-loading
+    runtime stays free of this content.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports: aisdk, httr2, rlang, yaml, jsonlite, R6, base64enc, utils
+Suggests: withr, curl, testthat (>= 3.0.0)
+Remotes: YuLab-SMU/aisdk
+Config/testthat/edition: 3
+URL: https://github.com/YuLab-SMU/aisdk.skills
+BugReports: https://github.com/YuLab-SMU/aisdk.skills/issues
+Depends: R (>= 4.1.0)
